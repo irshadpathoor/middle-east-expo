@@ -1,0 +1,120 @@
+
+/*---------variables----------*/
+
+$main-black: #222;
+
+$dark-black: #000;
+
+$white: #fff;
+
+$grey: #555;
+
+$twitter-color: #0084b4;
+
+$fb-color: #3b5998;
+
+$main-font: 'quicksandbook', arial, Helvetica, sans-serif;
+
+
+/*------------mixin---------*/
+
+@mixin line-before($height, $width, $margin-left) {
+	position: absolute;
+	content: "";
+	height: $height;
+	background-color: $main-black;
+	width: $width;
+	margin-left: $margin-left;
+	margin-top: 12px;
+}
+
+@mixin line-after($height, $width, $margin-right) {
+	position: absolute;
+	content: "";
+	height: $height;
+	background-color: $main-black;
+	width: $width;
+	margin-right: $margin-right;
+	margin-top: 12px;
+}
+
+
+/* -----------------Core Styles---------- */
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: $main-font;
+	background: $white;
+	color: $main-black;
+	font-size: 1.1em;
+	line-height: 1.5em;
+	text-align: center;
+}
+
+h1 {
+	font-weight: 200;
+	color: $white;
+	font-size: 30px;
+}
+
+h2 {
+	font-size: 25px;
+	padding-top: 10px;
+}
+
+h3 {
+	font-weight: 200;
+	padding-bottom: 10px;
+}
+
+h3.fade {
+	color: #999;
+}
+
+p {
+	margin: 0;
+	padding: 1em 0;
+	font-size: 15px;
+}
+
+
+.h3-wrap h3:before {
+	@include line-before(1px, 30px, -30px);
+}
+
+.h3-wrap h3:after {
+	@include line-after(1px, 30px, -30px);
+}
+
+.content-wrap {
+	padding: 0 1em;
+	overflow: hidden;
+}
+
+/*-----------pic-background-with-title-------------*/
+
+#pic-1, #pic-2, #pic-3, #pic-4 {
+	width: 100%;
+	min-height: 250px;
+	margin-top: 30px;
+
+	.paraWindow {
+		height: 250px;
+	}
+
+	h3 {
+		padding-top: 90px;
+	}
+
+	h1 {
+		padding-top: 0px;
+	}
+
+}

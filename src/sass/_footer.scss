@@ -1,0 +1,130 @@
+
+/*---------------------section-map-------------*/
+
+#map {
+	margin-top: 30px;
+	width: 100%;
+	height: 300px;
+
+	.map {
+		position: absolute;
+		width: 100%;
+		z-index: -1;
+	}
+
+	.content-wrap {
+		height: 300px;
+	}
+
+	img {
+	position: relative;
+	top: 70px;
+	}
+
+}
+
+
+/*-------------address----------*/
+
+#address p {
+font-size: 15px;
+}
+
+
+/*-----------subscribe------------------*/
+
+#subscribe {
+	background: $grey;
+	color: $white;
+	width: 100%;
+
+	form input {
+		background: $grey;
+		border: 1px solid $white;
+		width: 200px;
+		font-family: 'quicksandbook';
+		color: #ddd;
+		margin-top: 20px;
+	}
+
+	form input[type="email"] {
+		box-shadow: 0 0 0px 1000px $grey inset;
+		-webkit-text-fill-color: #eee !important;
+		padding: 8px;
+	}
+
+	p {
+		font-size: 15px;
+	}
+
+}
+
+
+/*------------footer-------------------------*/
+#main-footer {
+	color: $white;
+	background: $dark-black;
+	width: 100%;
+
+	.navbar-footer {
+		padding-top: 20px;
+	}
+
+	.navbar-footer ul li {
+		list-style: none;
+		display: block;
+		padding: 3px;
+	}
+
+	.navbar-footer ul a{
+		text-decoration: none;
+		color: $white;
+		text-transform: uppercase;
+		font-size: 12px;
+	}
+
+	ul.social-footer {
+		list-style: none;
+		margin-top: 15px;
+	}
+
+	ul.social-footer li.fb {
+		background: $grey;
+		height: 40px;
+		width: 40px;
+		display: inline-block;
+		border-radius: 50%;
+	}
+
+	ul.social-footer li.twitter {
+		background: $grey;
+		height: 40px;
+		width: 40px;
+		display: inline-block;
+		border-radius: 50%;
+	}
+
+	ul.social-footer li i {
+		color: $white;
+		padding-top: 13px;
+	}
+
+	ul.social-footer li.fb:hover {
+		background: $fb-color;
+	}
+
+	ul.social-footer li.twitter:hover {
+		background: $twitter-color;
+	}
+
+	ul.social-footer a {
+		text-decoration: none;
+	}
+
+	p {
+		color: $grey;
+		font-size: 15px;
+		padding-bottom: 2px;
+	}
+
+}

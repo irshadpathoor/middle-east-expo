@@ -1,0 +1,63 @@
+
+/*------------header-main----------------------------*/
+
+#header-main {
+	height: 100px;
+	width: 100%;
+	background: $main-black;
+	opacity: 0.9;
+	z-index: 10;
+
+	.logo {
+		width: 150px;
+		padding: 10px 0 0 0;
+	}
+
+	.navbar-main {
+		display: none;
+	}
+
+	.nav-icon {
+		margin-top: -60px;
+		margin-right: 10%;
+		right: 0;
+		float: right;
+		display: inline-block;
+	}
+
+	.nav-icon a {
+	color: $white;
+	text-decoration: none;
+	}
+
+	.side-nav {
+	background: $main-black;
+	height: 100%;
+	width: 0;
+	z-index: 10;
+	position: fixed;
+	top: 0;
+	right: 0;
+	padding-top: 60px;
+	transition: 0.5s;
+	overflow-x: hidden;
+	}
+
+	.side-nav a {
+	text-decoration: none;
+	padding: 10px 10px 10px 10px;
+	display: block;
+	text-transform: uppercase;
+	color: #ccc;
+	font-size: 15px;
+	transition: 0.3s;
+	}
+
+	.btn-close {
+	position: absolute;
+	top: 10px;
+	left: 20px;
+	margin-right: 50px;
+	}
+
+}

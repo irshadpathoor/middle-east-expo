@@ -1,0 +1,226 @@
+
+/*-------------main---------------------*/
+
+#main {
+	width: 100%;
+	transition: margin-right 0.5s;
+	overflow: hidden;
+}
+
+
+/*-------------header showcase-----------*/
+
+#showcase {
+	min-height: 550px;
+	color: $white;
+	text-align: center;
+	overflow: hidden;
+	width: 100%;
+
+	.bg-image {
+		background: $main-black url(../images/s1.jpg);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		width: 100%;
+		height: 550px;
+		z-index: -1;
+		position: absolute;
+	}
+
+	h3 {
+		padding-top: 150px;
+		padding-bottom: 0;
+		color: $main-black;
+		z-index: 5;
+	}
+
+	h1 {
+		padding-top: 10px;
+		line-height: 30px;
+		z-index: 5;
+	}
+
+}
+
+/*--------------------- saction-a----------------- */
+
+.logo-background {
+	background-size: 100%;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	-o-background-size: 100%;
+	color: $white;
+	margin-top: 15px;
+	height: 95px;
+	padding: 0.4em;
+	overflow: hidden;
+	font-size: 15px;
+}
+
+#section-a {
+	color: $main-black;
+	margin-top: 2em;
+
+	h3.fade {
+		color: #999;
+	}
+
+	h1 span {
+		color: $main-black;
+	}
+
+	h2, h1 {
+		padding-top: 10px;
+	}
+
+	p {
+		padding-top: 0;
+	}
+
+	.log1 {
+		@extend .logo-background;
+		background: $main-black url(../images/Pattern1.png) no-repeat center;
+	}
+
+	.log2 {
+		@extend .logo-background;
+		background: $main-black url(../images/Pattern2.png) no-repeat center;
+	}
+
+	.log1 p, .log2 p {
+		padding-top: 0;
+	}
+
+	img {
+		width: 100%;
+		margin-top: 25px;
+	}
+
+}
+
+
+/*------------section-b----------------*/
+
+#section-b {
+	color: $main-black;
+	margin-top: 1em;
+
+	h3.fade {
+		color: #999;
+	}
+
+	h1 span {
+		color: $main-black;
+	}
+
+	h2, h1 {
+		padding-top: 10px;
+	}
+
+	p {
+		padding-top: 0;
+	}
+
+	img.man {
+		width: 200px;
+		border-radius: 50%;
+		margin-left: 75px;
+	}
+
+	img.lady {
+		width: 200px;
+		border-radius: 50%;
+		margin-right: 75px;
+	}
+
+}
+
+
+/*------------------section-c------------------------*/
+
+#section-c {
+	margin-top: 30px;
+
+	img {
+		width: 90%;
+	}
+
+}
+
+
+/*-----------------------section-contact-----------------*/
+
+#contact {
+	margin-top: 30px;
+
+	p {
+		color: #999;
+		font-size: 15px;
+		padding-top: 0;
+	}
+
+	ul {
+		list-style: none;
+		margin-top: 5px;
+	}
+
+	li.fb {
+		background: $fb-color;
+		height: 40px;
+		width: 40px;
+		display: inline-block;
+		border-radius: 50%;
+	}
+
+	li.twitter {
+		background: $twitter-color;
+		height: 40px;
+		width: 40px;
+		display: inline-block;
+		border-radius: 50%;
+	}
+
+	li i {
+		color: $white;
+		padding-top: 13px;
+	}
+
+	li:hover {
+		opacity: 0.8;
+		border-radius: 30%;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	form {
+	margin-top: 20px;
+	}
+
+	form input {
+		width: 100%;
+		border: 1px solid #999;
+		padding: 5px;
+		margin: 7px 0;
+	}
+
+	form textarea {
+		width: 100%;
+		min-height: 100px;
+		border: 1px solid #999;
+		padding: 5px;
+		margin: 7px 0;
+	}
+
+	form button {
+		display: inline-block;
+		width: 200px;
+		padding: 10px;
+		background: $dark-black;
+		color: $white;
+		cursor: pointer;
+	}
+
+}
