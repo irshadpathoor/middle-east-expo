@@ -63,7 +63,7 @@ gulp.task('scripts', function(){
 });
 
 
-gulp.task('browser-sync', function(){
+gulp.task('browserSync', function(){
 	browserSync.init(["dist/*.html", "dist/images/*", "dist/css/*.css", "dist/js/*.js"], {
 		server: {
 			baseDir: "dist"
@@ -71,7 +71,7 @@ gulp.task('browser-sync', function(){
 	});
 });
 
-gulp.task('default', ['imageMin', 'scripts', 'copy', 'sass', 'browser-sync'], function () {
+gulp.task('default', ['imageMin', 'scripts', 'copy', 'sass', 'browserSync'], function () {
 	gulp.watch('src/sass/*', ['sass']);
 	gulp.watch('src/*.html', ['copy']);
 	gulp.watch('src/js/*.js', ['scripts']);
